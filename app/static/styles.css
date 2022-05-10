@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  font-variant: small-caps;
+  /*font-weight: bold;*/
+  /*24px/1 sans-serif;*/
+  color: #111;
+}
+
+.name {
+  /*display: block;*/
+  /*padding: 1%;*/
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(245, 219, 193, 0.2);
+
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.10);
+  color: #313131;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+.box {
+    position:relative;
+}
+
+.like_count{
+  text-align: right;
+}
+
+.tag{
+  display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    margin: 0 16px 8px 0;
+    padding: 0 10px 0 12px;
+    /*background: #777;*/
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 12px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-weight: bold;
+}

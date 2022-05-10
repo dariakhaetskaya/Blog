@@ -1,0 +1,11 @@
+Flask~=2.0.3
+Flask-SQLAlchemy>=1.4.32
+Flask-Login==0.5.0
+Flask-WTF==1.0.0
+WTForms~=3.0.1
+Werkzeug~=2.0.3
+Flask-Bootstrap>=3.3.7.1
+Flask-Moment>=1.0.2
+python-dotenv>=0.20.0
+email_validator
+SQLAlchemy~=1.4.32

@@ -1,0 +1,34 @@
+    <table class="table table-hover">
+        <div class="box">
+            <tr>
+                <td width="70px">
+                    <a href="{{ url_for('user', username=post.author.username) }}">
+                        <img src="{{ post.author.avatar(70) }}" />
+                    </a>
+                </td>
+                <td>
+                    <a href="{{ url_for('user', username=post.author.username) }}">
+                        {{ post.author.username }}
+                    </a>
+                    posted {{ moment(post.timestamp).fromNow()}}:
+                    <h2>{{ post.title }}</h2>
+                    <h4>{{ post.body }}</h4>
+                    <div class="tag">
+                        <a href="{{ url_for('tag', tag_id=post.tag_id)}}">
+                            {{ post.get_tag() }}
+                        </a>
+                    </div>
+                    <p>
+                        <a href="{{ url_for('like', post_id=post.id) }}">
+                            <img align="right" src="../static/heart.png" width="30" height="30" >
+                        </a>
+                        <div class="like_count">
+                            <a href="{{ url_for('likes', post_id=post.id) }}">
+                                {{ post.count_likes() }}
+                            </a>
+                        </div>
+                    </p>
+                </td>
+            </tr>
+        </div>
+    </table>
